@@ -25,6 +25,8 @@ public class divisionFun{
         System.out.println("answer: " + (x / y));
     }
     public static void main(String[] args) {
+
+        int x = 0;
         //divisionFun myVar = new divisionFun();
         calculate(4, 2);
         calculate(5.5, 1.2);

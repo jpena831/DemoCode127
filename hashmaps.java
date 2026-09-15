@@ -6,40 +6,43 @@ import java.util.Map;
  */
 public class hashmaps {
     public static void main(String[] args) {
-        //hashmaps cannot make guarantees to order
+    //hashmaps cannot make guarantees to order
     HashMap<String, Integer> company = new HashMap<String, Integer>();
 
     // Add keys and values 
-    // company.put("Apple", 1976);
-    // company.put("Microsoft", 1975);
-    // company.put("IBM", 1911);
-    // company.put("Google", 1998);
-    // //company.put(key, value);
-    // System.out.println(company);
+    company.put("Apple", 1976);
+    company.put("Microsoft", 1975);
+    company.put("IBM", 1911);
+    company.put("Google", 1998);
+    //company.put(key, value);
+    System.out.println(company);
 
     System.out.println("-----------------------------------------");
 
     // Create a HashMap object called 
-    Map<String, String> teams = new HashMap<String, String>();
+    HashMap<String, String> teams = new HashMap<String, String>();
     
     //similar keys
     teams.put("Minnesota", "Twins");
     teams.put("Georgia", "Wild");
     teams.put("Alabama", "Timberwolves");
     System.out.println(teams);
-    // teams.get("Minnesota");
-    // System.out.println(teams.get("Minnesota"));
-    // teams.remove("Georgia"); 
+    teams.put("Alabama", "Lumberjacks");
+    System.out.println(teams);
+    teams.get("Minnesota");
+    System.out.println(teams.get("Minnesota"));
+    teams.remove("Georgia"); 
     // other methods are .size() which gets length or .clear() which removes all items
     
     // Print keys
     // for (String i : teams.keySet()) {
     //     System.out.println(i);
     //     }
-    // Prints values
-    for (String i : teams.values()) {
-        System.out.println(i);
-        }
+    // // Prints values
+    // for (String i : teams.values()) {
+    //     System.out.println(i);
+    //     }
+    // }
     }
 }
 
@@ -47,7 +50,7 @@ public class hashmaps {
  * to help match and pair data.
  * 
  * Arrays store items as an ordered collection, and you have to access them with an 
- * index number (int type). A HashMap however, store items in "key/value" pairs, and 
+ * index number. A HashMap however, store items in "key/value" pairs, and 
  * you can access them by an index of another type (e.g. a String).
 
 One object is used as a key (index) to another object (value). It can store 

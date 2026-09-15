@@ -60,6 +60,7 @@ public class jantwoseven {
          * In order to add remove or modify elements in this list
          * you can view String or List-based methods
          */
+        
         String[] coffee = {"caramel", "vanilla", "hazelnut"};
         for (String x : coffee) {
             System.out.println(x);
