@@ -5,7 +5,10 @@ public class jantwoseven {
          * mutable - you can change, modify
          * immutable - you are NOT able to change, modify
          * 
-         * Strings are immutable
+         * Strings are immutable - once a String object is created in memory, its content cannot be changed
+         * appears to modify a string, Java does not alter the existing object. 
+         * Instead, it creates a completely new String object in memory and discards or reassigns the reference
+         * 
          * Lists can be both immutable AND mutable depending
          * on data and context
          */
@@ -43,11 +46,9 @@ public class jantwoseven {
         /**
          * below we are using a for-each loop to loop through
          * list items in a string list or arrays.
-         * this particular Array is defined as string data types and
-         * we named/declated it coffee. the elements are 3 items that 
+         * this particular Array is defined as stringand
+         * we named it coffee. the elements are 3 items that 
          * are strings.
-         * 
-         * W
          * 
          * The length of the array is 3 meanwhile to access particular 
          * elements in this array, remember index positions. In other words
@@ -64,6 +65,11 @@ public class jantwoseven {
         String[] coffee = {"caramel", "vanilla", "hazelnut"};
         for (String x : coffee) {
             System.out.println(x);
+            // System.out.println(x);
         }
+        coffee[0] = "pumpkin";
+        System.out.println(coffee[0]);
+        System.out.println(coffee.length);
+        System.out.println(coffee);
     }
 }
