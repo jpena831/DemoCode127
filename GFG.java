@@ -1,10 +1,8 @@
 public class GFG {
-    // main class to run the vehicle interface and its 
-    // implementations
+    // main class to run the vehicle interface and its implementations
     public static void main(String[] args) { 
           
-        // creating an inatance of Bicycle  
-        // doing some operations  
+        // creating an instance of Bicycle    
         Bicycle bicycle = new Bicycle(); 
         bicycle.changeGear(2); 
         bicycle.speedUp(3); 

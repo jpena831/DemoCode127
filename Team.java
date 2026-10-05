@@ -24,15 +24,23 @@ public class Team {
 
 
     public Team(String initTeamName, String initTeamEmail, String initTeamPhone)
-   {
+    {
       teamName = initTeamName;
       teamEmail = initTeamEmail;
       teamPhoneNumber = initTeamPhone;
-   }
+    }
 
     //getter - accessor with return type
     public String getName() {
         return teamName;
+    }
+
+    public String getEmail() {
+        return teamEmail;
+    }
+
+     public String getPhone() {
+        return teamPhoneNumber;
     }
 
     //setter - mutator
@@ -42,13 +50,30 @@ public class Team {
         //The this keyword refers to the current object in a method or constructor.
         this.teamName = newTeamname;
     }
+
+    public void setEmail(String newTeamemail){
+        this.teamEmail = newTeamemail;
+    }
+
+    public void setPhone(String newTeamphone){
+        this.teamPhoneNumber = newTeamphone;
+    }
     public static void main(String[] args) {
         System.out.println("=====================");
-        Team anotherTeam = new Team();
-        System.out.println(anotherTeam);
-        anotherTeam.setName("Minnesota Twins");
-        System.out.println("=====================");
-        System.out.println(anotherTeam.getName());
+        Team anotherTeam = new Team("Lynx", "lynx@macalester.edu", "phone number");
+        //Team secondTeam = new Team();
+        //System.out.println(anotherTeam);
+        // anotherTeam.setName("Minnesota Twins");
+        // System.out.println("=====================");
+        // System.out.println(anotherTeam.getName());
+        // System.out.println(anotherTeam.getEmail());
+        // anotherTeam.setEmail("kevin@macalester.edu");
+        // System.out.println(anotherTeam.getEmail());
+        System.out.println(anotherTeam.getPhone());
+        anotherTeam.setPhone("918445657");
+        System.out.println(anotherTeam.getPhone());
+
+
         // .toString()
 
     }

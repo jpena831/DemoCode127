@@ -1,21 +1,14 @@
-public interface Vehicle {
-    
-    // all are the abstract methods. 
+public interface Vehicle { 
     // create the interface
     // we create empty methods that do not have bodies
 
-    //methods in an interface are abstract by default
-
-    //Multiple inheritance by interface occurs if a class implements 
-    //multiple interfaces or also if an interface itself extends multiple interfaces.
-    abstract void changeGear(int a); 
-    abstract void speedUp(int a); 
-    abstract void applyBrakes(int a);
+    void changeGear(int a); 
+    void speedUp(int a); 
+    void applyBrakes(int a);
 }
 
-// create one class called Bicycle that is implemented using
-// the Vehcicle interface
-class Bicycle implements Vehicle, model{ 
+// create one class called Bicycle that is implemented using the Vehicle interface
+class Bicycle implements Vehicle{ 
       
     int speed=1; 
     int gear; 
@@ -44,17 +37,6 @@ class Bicycle implements Vehicle, model{
          System.out.println("speed: " + speed 
               + " gear: " + gear); 
     }      
-
-    //second interface
-    public void make(){
-        System.out.println("the make is" + make);
-    }
-    public void shape(){
-        System.out.println("the shape is" + shape);
-    }
-    public void year(){
-        System.out.println("the year is" + year);
-    }
 } 
 
 // creating a second class that implements the Vehicle interface
@@ -92,3 +74,4 @@ class Moped implements Vehicle{
 
 
 
+    //Multiple inheritance by interface occurs if a class implements multiple interfaces or also if an interface itself extends multiple interfaces.
