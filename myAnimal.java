@@ -1,3 +1,4 @@
+
 public class myAnimal {
     
     public static void main(String[] args) {
