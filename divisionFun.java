@@ -14,7 +14,6 @@
  */
 
 public class divisionFun{
-
     // two similar methods with no return types the only
     // difference is their formal parameters
     private static void calculate(int a, int b){
@@ -26,7 +25,7 @@ public class divisionFun{
     }
     public static void main(String[] args) {
 
-        int x = 0;
+        //int x = 0;
         //divisionFun myVar = new divisionFun();
         calculate(4, 2);
         calculate(5.5, 1.2);
