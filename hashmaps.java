@@ -1,6 +1,5 @@
 // Import the HashMap class
 import java.util.HashMap;
-import java.util.Map;
 /** 
  * hash map demos
  */
@@ -27,23 +26,28 @@ public class hashmaps {
     teams.put("Georgia", "Wild");
     teams.put("Alabama", "Timberwolves");
     System.out.println(teams);
+    //change the value pair in the next line
     teams.put("Alabama", "Lumberjacks");
     System.out.println(teams);
-    teams.get("Minnesota");
+    //retrieve the Minnesota key's value
     System.out.println(teams.get("Minnesota"));
-    teams.remove("Georgia"); 
+    // teams.remove("Georgia"); 
+    // System.out.println(teams);
     // other methods are .size() which gets length or .clear() which removes all items
     
-    // Print keys
-    // for (String i : teams.keySet()) {
-    //     System.out.println(i);
-    //     }
-    // // Prints values
-    // for (String i : teams.values()) {
-    //     System.out.println(i);
-    //     }
-    // }
+    System.out.println("----------------------------------------- PRINT KEYS");
+    //Print keys
+    for (String i : teams.keySet()) {
+        System.out.println(i);
+        }
+
+    System.out.println("----------------------------------------- PRINT VALUES");
+    // Prints values
+    for (String i : teams.values()) {
+        System.out.println(i);
+        }
     }
+    
 }
 
 /** Hashmaps or maps are similar to dictionaries in python. They have key value pairs

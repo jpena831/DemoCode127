@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * @author Joslenne Pena
  * 
@@ -5,7 +7,7 @@
  */
 
 public class AppArrays {
-    
+    main
     public static void main(String[] args) {
         
         // we access arrays starting from 0 these are called indices or index numbers
@@ -46,5 +48,8 @@ public class AppArrays {
         int[][] oddNums = { {1, 3, 5}, {7, 9, 11, 13} };
         int y = oddNums[0][1];
         System.out.println(y);
+        //System.out.println(oddNums);
+        //System.out.println(Arrays.toString(oddNums));
+        System.out.println(Arrays.deepToString(oddNums));
     }
 }
