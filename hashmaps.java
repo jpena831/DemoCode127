@@ -9,12 +9,12 @@ public class hashmaps {
     HashMap<String, Integer> company = new HashMap<String, Integer>();
 
     // Add keys and values 
-    company.put("Apple", 1976);
-    company.put("Microsoft", 1975);
-    company.put("IBM", 1911);
-    company.put("Google", 1998);
-    //company.put(key, value);
-    System.out.println(company);
+    // company.put("Apple", 1976);
+    // company.put("Microsoft", 1975);
+    // company.put("IBM", 1911);
+    // company.put("Google", 1998);
+    // //company.put(key, value);
+    // System.out.println(company);
 
     System.out.println("-----------------------------------------");
 
@@ -30,12 +30,12 @@ public class hashmaps {
     teams.put("Alabama", "Lumberjacks");
     System.out.println(teams);
     //retrieve the Minnesota key's value
-    System.out.println(teams.get("Minnesota"));
-    // teams.remove("Georgia"); 
-    // System.out.println(teams);
+    //System.out.println(teams.get("Minnesota"));
+    teams.remove("Alabama"); 
+    System.out.println(teams);
     // other methods are .size() which gets length or .clear() which removes all items
     
-    System.out.println("----------------------------------------- PRINT KEYS");
+    //System.out.println("----------------------------------------- PRINT KEYS");
     //Print keys
     for (String i : teams.keySet()) {
         System.out.println(i);
